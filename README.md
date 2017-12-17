@@ -3,13 +3,23 @@ Economic Models
 
 Studies of debt and inflation
 
+Concept
+----------------
+
+This repo is intended to contain studies investigating the nature of currencies. Questions: How is currency created, how is it circulated, and how are the resulting economic systems balanced?
+
 Contents
 ----------------
 
-Python applications to be run via command line.
+### base-model.py
+
+This is a simulation of very fundamental currency creation, distribution, and circulation. A currency issuer (central bank) releases currency to "the world" ie a system meant to circulate that currency. "The world" owes the issuer more currency at interest periodically. When the world does not have enough currency to pay back the currency issuer, more currency is issued.
+
 
 How to run
 -------
+
+Python applications to be run via command line.
 
 ```bash
 python filename
