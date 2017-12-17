@@ -6,7 +6,7 @@ Studies of debt and inflation
 Concept
 ----------------
 
-This repo is intended to contain studies investigating the nature of currencies. Questions: How is currency created, how is it circulated, and how are the resulting economic systems balanced?
+This repo is intended to contain studies investigating the nature of currencies. Questions: How is currency created, how is it circulated, and how are the resulting economic systems balanced? In this way, these are also studies on the nature of debt and inflation (circulating currency is owed currency).
 
 Contents
 ----------------
