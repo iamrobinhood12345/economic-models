@@ -33,14 +33,16 @@ def issue_money(val, money_circulating, debt_to_central_bank, contracts):
 
 def remove_debt(money_circulating, debt_to_central_bank, contracts):
     """Remove debt."""
-    if money_circulating[0] >= contracts[0]:
-        print("Paying off debt of oldest contract of " + str(contracts[0]) + " units")
-        money_circulating[0] -= contracts[0]
-        print("Removing " + str(contracts[0]) + " units from money circulating")
-        debt_to_central_bank[0] -= contracts[0]
-        print("Removing " + str(contracts[0]) + " units from debt to central bank")
-        print("Removing oldest contract of " + str(contracts[0]) + " units")
-        contracts.popleft()
+    for i in range(len(contracts)):
+        if money_circulating[0] >= contracts[i]:
+            print("Paying off debt of contract of " + str(contracts[i]) + " units")
+            money_circulating[0] -= contracts[i]
+            print("Removing " + str(contracts[i]) + " units from money circulating")
+            deb_to_central_bank[0] -= contracts[i]
+            print("Removing " + str(contracts[i]) + " units from debt to central bank")
+            print("Removing contract of " + str(contracts[i]) + " units")
+            del contracts[i]
+            break
 
 
 def main():
