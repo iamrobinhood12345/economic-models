@@ -1,7 +1,6 @@
 # Basic Flow of Money Model
 
 import sys
-from collections import deque
 
 MODEL_NUMBER = 1
 INPUT_STRING = """
@@ -51,7 +50,7 @@ def main():
     """Handle menus and input."""
     money_circulating = [0]
     debt_to_central_bank = [0]
-    contracts = deque()
+    contracts = []
     print("""
                     Economic Model """ + str(MODEL_NUMBER) + """
         Turn based flow of money model.
