@@ -22,12 +22,13 @@ def issue_money(val, money_circulating, debt_to_central_bank, contracts):
     """Issue money."""
     money_circulating[0] += val
     print("Issuing " + str(val) + " units")
-    debt_to_add = val + 1
-    debt_to_central_bank[0] += debt_to_add
-    print("Adding " + str(debt_to_add) + " to total debt to central bank")
-    contract = debt_to_add
-    contracts.append(contract)
-    print("Creating contract for " + str(contract) + " units")
+    if val != 0:
+        debt_to_add = val + 1
+        debt_to_central_bank[0] += debt_to_add
+        print("Adding " + str(debt_to_add) + " to total debt to central bank")
+        contract = debt_to_add
+        contracts.append(contract)
+        print("Creating contract for " + str(contract) + " units")
 
 
 def remove_debt(money_circulating, debt_to_central_bank, contracts):
