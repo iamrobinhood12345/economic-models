@@ -29,6 +29,8 @@ def issue_money(val, money_circulating, debt_to_central_bank, contracts):
         contract = debt_to_add
         contracts.append(contract)
         print("Creating contract for " + str(contract) + " units")
+    else:
+        print("No contract created, no money issued.")
 
 
 def remove_debt(money_circulating, debt_to_central_bank, contracts):
