@@ -39,7 +39,7 @@ def remove_debt(money_circulating, debt_to_central_bank, contracts):
             print("Paying off debt of contract of " + str(contracts[i]) + " units")
             money_circulating[0] -= contracts[i]
             print("Removing " + str(contracts[i]) + " units from money circulating")
-            deb_to_central_bank[0] -= contracts[i]
+            debt_to_central_bank[0] -= contracts[i]
             print("Removing " + str(contracts[i]) + " units from debt to central bank")
             print("Removing contract of " + str(contracts[i]) + " units")
             del contracts[i]
